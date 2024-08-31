@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/bbgroup/static/css/main.b86fb9fc.css",
+    "main.js": "/bbgroup/static/js/main.e6064158.js",
+    "static/js/845.f095bcfe.chunk.js": "/bbgroup/static/js/845.f095bcfe.chunk.js",
+    "static/media/logo.svg": "/bbgroup/static/media/logo.4a4d1f1bad093792157ccc90ede1c1af.svg",
+    "static/media/gs.png": "/bbgroup/static/media/gs.70fb808f3135f1df5d04.png",
+    "index.html": "/bbgroup/index.html",
+    "main.b86fb9fc.css.map": "/bbgroup/static/css/main.b86fb9fc.css.map",
+    "main.e6064158.js.map": "/bbgroup/static/js/main.e6064158.js.map",
+    "845.f095bcfe.chunk.js.map": "/bbgroup/static/js/845.f095bcfe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b86fb9fc.css",
+    "static/js/main.e6064158.js"
+  ]
+}
