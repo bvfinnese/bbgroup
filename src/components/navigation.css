@@ -1,0 +1,25 @@
+
+.side-nav {
+    background-color: #192734; /* Dark theme */
+    padding: 1rem;
+    /* Add Bootstrap shadow class */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Customize the shadow effect */
+    border-radius: 0.25rem; /* Optional: Add rounded corners */
+}
+.side-nav .nav-link {
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.side-nav .nav-link:hover, .side-nav .active-link {
+    background-color: #42526E;
+    color: #ffffff;
+}
+
+.page-content {
+    padding: 2rem;
+    height: 75vh;
+    overflow: auto;
+}

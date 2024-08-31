@@ -1,0 +1,40 @@
+.app-page {
+  height: 100vh;
+}
+
+.bg-dark {
+  background-color: #0A0A0A !important;
+}
+
+.bg-white {
+  background-color: #FFEBE6 !important
+}
+
+.text-white {
+  color: #FFEBE6 !important
+}
+
+.shimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+
+  background: linear-gradient(100deg,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%);
+
+  animation: shimmer 2s infinite linear;
+}
+
+@keyframes shimmer {
+  from {
+    transform: translateX(-200%);
+  }
+
+  to {
+    transform: translateX(200%);
+  }
+}
