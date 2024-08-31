@@ -35,7 +35,7 @@ function App() {
             <LogoutBtn />
           </Container>
         </Navbar>
-        <Row className="justify-content-md-center p-4">
+        <Row className="justify-content-md-center p-lg-4">
           <ArtWorks />
         </Row>
         <ToastContainer autoClose={2000} />
