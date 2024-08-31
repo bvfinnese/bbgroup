@@ -68,5 +68,5 @@
     "workbox-webpack-plugin": "^6.5.4"
   },
   "description": "CRM",
-  "homepage": "https://bvfinnese.github.io/bbgroup"
+  "homepage": "https://bvfinnese.github.io/client-portal"
 }
