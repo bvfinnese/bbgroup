@@ -41,7 +41,7 @@ function App() {
         <ToastContainer autoClose={2000} />
         {/* Footer Section */}
         <footer className="text-center text-white bg-dark py-3">
-          <p className="f-80">&copy; {new Date().getFullYear()} <h3><b>BV FINNESE CONSULTANTS LTD. </b></h3>
+          <p className="f-80">&copy; {new Date().getFullYear()} <b className="h-3">BV FINNESE CONSULTANTS LTD. </b>
             All rights reserved.</p>
         </footer>
       </MongoContextProvider>

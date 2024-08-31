@@ -13,6 +13,8 @@ function ArtWorks(props) {
         onSubmit,
         email,
         password,
+        loginFailed,
+        setLoginFailed
     } = useContext(MongoContext);
 
     // State to hold the user's MongoDB document
@@ -46,17 +48,20 @@ function ArtWorks(props) {
         return <Spinner animation="border" />;
     }
 
+
+
     return user ? (
         <Row className="p-4">
             <NavigationComponent user={user} />
         </Row>
     ) : (
         <LoginForm
-            onEmailChange={(e) => setEmail(e.target.value)}
+            onEmailChange={(e) => { setEmail(e.target.value); setLoginFailed(false) }}
             email={email}
-            onPassWordChange={(e) => setPassword(e.target.value)}
+            onPassWordChange={(e) => { setPassword(e.target.value); setLoginFailed(false) }}
             password={password}
             onSubmit={onSubmit}
+            loginFailed={loginFailed}
         />
     );
 }

@@ -38,14 +38,14 @@ export const UserContextProvider = ({ children, app: mongoRealm }) => {
         .then(updateUser)
         .catch((err) => {
           console.log(err);
-          mongoRealm.emailPasswordAuth
-            .registerUser({ email, password })
-            .then(() => {
-              toast("Looks like you have no account. Signing you up!");
+          // mongoRealm.emailPasswordAuth
+          //   .registerUser({ email, password })
+          //   .then(() => {
+          //     toast("Looks like you have no account. Signing you up!");
 
-              const c = Realm.Credentials.emailPassword(email, password);
-              mongoRealm.logIn(c).then(updateUser);
-            });
+          //     const c = Realm.Credentials.emailPassword(email, password);
+          //     mongoRealm.logIn(c).then(updateUser);
+          //   });
         });
     } catch (err) {
       console.error("Failed to log in", err);

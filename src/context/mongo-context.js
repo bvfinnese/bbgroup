@@ -10,6 +10,7 @@ export const MongoContextProvider = ({ children, app: mongoRealm }) => {
   const [loading, setLoading] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [isAnon, setIsAnon] = useState(true);
+  const [loginFailed, setLoginFailed] = useState(false);
   const [signInBtn, setSignInBtn] = useState(false);
 
   const [user, setUser] = useState();
@@ -51,6 +52,10 @@ export const MongoContextProvider = ({ children, app: mongoRealm }) => {
         .then(updateUser)
         .catch((err) => {
           console.log(err);
+          setLoading(false);
+          setLoginFailed(true);
+          toast("Logging out!", { autoClose: 2000 });
+
         });
     } catch (err) {
       console.error("Failed to log in", err);
@@ -96,6 +101,8 @@ export const MongoContextProvider = ({ children, app: mongoRealm }) => {
         setUser,
         isAnon,
         setSignInBtn,
+        loginFailed,
+        setLoginFailed
       }}
     >
       {children}

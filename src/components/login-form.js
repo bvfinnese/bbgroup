@@ -32,6 +32,9 @@ function LoginForm(props) {
             autoComplete="new-password"
             aria-autocomplete="none"  // Using "new-password" prevents auto-fill
           />
+          <Form.Text className="text-danger">
+            {props.loginFailed ? "Login Failed! Please check your password" : ''}
+          </Form.Text>
         </Form.Group>
         <Button variant="primary" type="submit" onClick={props.onSubmit}>
           Submit
